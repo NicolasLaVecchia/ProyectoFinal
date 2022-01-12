@@ -1,0 +1,24 @@
+/* INICIO FOOTER */
+.footer{
+    width: auto;
+    height: auto;
+    background-color: $colorTerceario;
+    & p{
+        font-family: $fuenteTerciaria;
+        font-size: 1vmax;
+        font-style: italic;
+        color: whitesmoke;
+    }
+    & a{
+        width: 100%;
+        height: auto;
+        color: whitesmoke;
+        & img{
+            transition: 700ms;
+            &:hover{
+                transform: translateX(-1rem);
+            }
+        }
+    }
+}
+/* FIN FOOTER */

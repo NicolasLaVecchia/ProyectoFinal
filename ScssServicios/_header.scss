@@ -1,0 +1,70 @@
+/* INICIO HEADER */
+/* inicio navbar */
+.navbar{
+    background-color: $colorPrincipal !important;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+    & .navbar-brand{
+        & img{
+            transition: 500ms;
+            &:hover{
+                transform: scale(0.9);    
+            }    
+        }
+    }
+    & .navbar-toggler{
+        background-color: whitesmoke;
+    }
+    & .navbar-collapse{
+        & .navbar-nav{
+            & .nav-item{
+                margin-right: 2rem;
+                & .nav-link{
+                    color:black !important;
+                    transition: 800ms;
+                    &:hover{
+                        color:#f5f5f5 !important;
+                    }
+                    & i{
+                        transition: 800ms;
+                        &:hover{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+        & .form-inline{
+            & .btn{
+                transition: 800ms;
+
+                &:hover{
+                    background-color: whitesmoke;
+                    color: black;
+                    border: solid 1px whitesmoke;
+                }
+            }
+        }
+    }
+}
+/* fin navbar */
+/* inicio navredes */
+.redes{
+    margin-right: 0.5rem;
+    & .nav-item{
+        background-color: $colorPrincipal;
+        transition: 500ms;
+        &:hover{
+            transform: translateY(0.3rem);
+        }
+        & .nav-link{
+            color: whitesmoke;
+            transition: 800ms;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+/* fin navredes */
+/* FIN HEADER */
+

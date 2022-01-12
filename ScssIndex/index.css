@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=PT+Sans:ital@1&family=Roboto:wght@300&display=swap");
+/* 
+    font-family: 'Cormorant Garamond', serif;
+
+    font-family: 'PT Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+*/
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* desplazamiento onepage*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+  background: url(../Images/triangulos1.svg);
+}
+
+/* INICIO HEADER */
+/* inicio navbar */
+.navbar {
+  background-color: #ffb2a4 !important;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-brand img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.navbar .navbar-brand img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.navbar .navbar-toggler {
+  background-color: whitesmoke;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  margin-right: 2rem;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: black !important;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #f5f5f5 !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.navbar .navbar-collapse .form-inline .btn {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.navbar .navbar-collapse .form-inline .btn:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: solid 1px whitesmoke;
+}
+
+/* fin navbar */
+/* inicio navredes */
+.redes {
+  margin-right: 0.5rem;
+}
+
+.redes .nav-item {
+  background-color: #ffb2a4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.redes .nav-item:hover {
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+}
+
+.redes .nav-item .nav-link {
+  color: whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.redes .nav-item .nav-link:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/* fin navredes */
+/* FIN HEADER */
+/* INICIO MAIN */
+.main {
+  width: auto;
+  height: auto;
+}
+
+.main .jumbotronHome {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0 !important;
+}
+
+.main .jumbotronHome #videoArea {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.main .jumbotronHome #videoArea .jumbotron {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .jumbotronHome .text {
+  position: relative;
+  z-index: 3;
+}
+
+.main .jumbotronHome .text h1 {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 5%;
+  margin-top: 35%;
+  text-shadow: 2px 2px 2px black;
+}
+
+.main .jumbotronHome .text h1 i {
+  -webkit-animation: infinite 5s idea1;
+          animation: infinite 5s idea1;
+}
+
+@-webkit-keyframes idea1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    color: goldenrod;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes idea1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    color: goldenrod;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.main .jumbotronHome .text h2 {
+  color: whitesmoke;
+  font-family: "Cormorant Garamond", serif;
+  text-shadow: 2px 2px 2px black;
+  font-style: oblique;
+  font-weight: bolder;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-bottom: 5%;
+}
+
+.main .jumbotronHome .text h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main .jumbotronHome .text .btn {
+  background-color: black;
+  color: whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main .jumbotronHome .text .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: #ffb2a4;
+}
+
+.main .division {
+  width: auto;
+  height: 100%;
+}
+
+.main .division img {
+  width: 100%;
+  height: 100%;
+}
+
+.main #portfolio {
+  height: auto;
+}
+
+.main #portfolio .p-left, .main #portfolio #servicios .s-left, .main #servicios #portfolio .s-left, .main #portfolio #empresa .e-left, .main #empresa #portfolio .e-left {
+  width: auto;
+  height: auto;
+}
+
+.main #portfolio .p-left .titulo--h2, .main #portfolio #servicios .s-left .titulo--h2, .main #servicios #portfolio .s-left .titulo--h2, .main #portfolio #empresa .e-left .titulo--h2, .main #empresa #portfolio .e-left .titulo--h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vmax;
+  font-weight: bolder;
+  font-style: oblique;
+  color: black;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  padding: 15vh 0vw 2vh 0vw;
+}
+
+.main #portfolio .p-left .titulo--h2:hover, .main #portfolio #servicios .s-left .titulo--h2:hover, .main #servicios #portfolio .s-left .titulo--h2:hover, .main #portfolio #empresa .e-left .titulo--h2:hover, .main #empresa #portfolio .e-left .titulo--h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main #portfolio .p-left p, .main #portfolio #servicios .s-left p, .main #servicios #portfolio .s-left p, .main #portfolio #empresa .e-left p, .main #empresa #portfolio .e-left p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2vmax;
+  font-weight: bold;
+  font-style: none;
+  color: #818181;
+}
+
+.main #portfolio .p-left p span, .main #portfolio #servicios .s-left p span, .main #servicios #portfolio .s-left p span, .main #portfolio #empresa .e-left p span, .main #empresa #portfolio .e-left p span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: none;
+  font-weight: bold;
+  font-style: none;
+  color: whitesmoke;
+  -webkit-animation: span1 infinite 5s;
+          animation: span1 infinite 5s;
+}
+
+@-webkit-keyframes span1 {
+  0% {
+    opacity: 1;
+    color: #ffb2a4;
+  }
+  50% {
+    opacity: 1;
+    color: goldenrod;
+  }
+  100% {
+    opacity: 1;
+    color: #ffb2a4;
+  }
+}
+
+@keyframes span1 {
+  0% {
+    opacity: 1;
+    color: #ffb2a4;
+  }
+  50% {
+    opacity: 1;
+    color: goldenrod;
+  }
+  100% {
+    opacity: 1;
+    color: #ffb2a4;
+  }
+}
+
+.main #portfolio .p-left .btn, .main #portfolio #servicios .s-left .btn, .main #servicios #portfolio .s-left .btn, .main #portfolio #empresa .e-left .btn, .main #empresa #portfolio .e-left .btn {
+  background-color: black;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main #portfolio .p-left .btn:hover, .main #portfolio #servicios .s-left .btn:hover, .main #servicios #portfolio .s-left .btn:hover, .main #portfolio #empresa .e-left .btn:hover, .main #empresa #portfolio .e-left .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #ffb2a4;
+  border: solid 1px whitesmoke;
+  color: whitesmoke;
+}
+
+.main #portfolio .p-right {
+  width: auto;
+  height: auto;
+}
+
+.main #portfolio .p-right #carousel1 {
+  padding: 15vh 0vw 5vh 0vw;
+}
+
+.main #portfolio .p-right .carousel-item:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.main #servicios {
+  height: auto;
+}
+
+.main #servicios .s-left .titulo2--h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vmax;
+  font-weight: bold;
+  font-style: oblique;
+  color: black;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  padding: 15vh 0vw 2vh 0vw;
+}
+
+.main #servicios .s-left .titulo2--h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main #servicios .s-left .btn {
+  background-color: black;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main #servicios .s-left .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #ffb2a4;
+  border: solid 1px whitesmoke;
+}
+
+.main #servicios .s-right {
+  width: auto;
+  height: auto;
+}
+
+.main #servicios .s-right #carousel2 {
+  padding: 15vh 0vw 5vh 0vw;
+}
+
+.main #servicios .s-right #carousel2 h5 {
+  text-shadow: 0 0 2px black;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vmax;
+}
+
+.main .titulo--medida1 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida2 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.1vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida3 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida4 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.3vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main .titulo--medida5 {
+  color: #818181;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.9vmax;
+  margin: 0vh 1vw 5vh 1vw;
+}
+
+.main #empresa {
+  width: auto;
+  height: auto;
+}
+
+.main #empresa .e-left .titulo3--h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vmax;
+  font-weight: bold;
+  font-style: oblique;
+  color: black;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  padding: 15vh 0vw 2vh 0vw;
+}
+
+.main #empresa .e-left .titulo3--h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main #empresa .e-left .titulo3--h2 span {
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 4vmax;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.main #empresa .e-left p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2vmax;
+  font-weight: none;
+  font-style: none;
+  color: #818181;
+  margin: 0vh 5vw 8vh 5vw;
+}
+
+.main #empresa .e-left p span {
+  color: black;
+  font-weight: bold;
+}
+
+.main #empresa .e-left .btn {
+  background-color: black;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main #empresa .e-left .btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #ffb2a4;
+  border: solid 1px whitesmoke;
+}
+
+.main #empresa .e-right #carousel3 {
+  padding: 15vh 0vw 5vh 0vw;
+}
+
+.main #empresa .e-right #carousel3 .carousel-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* FIN MAIN */
+/* INICIO FOOTER */
+.footer {
+  width: auto;
+  height: auto;
+  background-color: #818181;
+}
+
+.footer p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1vmax;
+  font-style: italic;
+  color: whitesmoke;
+}
+
+.footer a {
+  width: 100%;
+  height: auto;
+  color: whitesmoke;
+}
+
+.footer a img {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.footer a img:hover {
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+}
+
+/* FIN FOOTER */
+/*# sourceMappingURL=index.css.map */

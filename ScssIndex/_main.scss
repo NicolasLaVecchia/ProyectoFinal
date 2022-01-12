@@ -1,0 +1,257 @@
+/* INICIO MAIN */
+.main{
+    width: auto;
+    height: auto;
+
+    & .jumbotronHome {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        position: relative;
+        margin-top: 0 !important;
+        & #videoArea{
+            left: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            & .jumbotron{
+                display: block;
+                min-width: 100%;
+                min-height: 100%;
+                position: absolute;
+                object-fit: cover;
+            }
+        }
+        & .text{
+            position: relative;
+            z-index: 3;
+            & h1{
+                color: whitesmoke;
+                font-family: $fuentePrincipal;
+                font-weight: bolder;
+                margin-bottom: 5%;
+                margin-top: 35%;
+                text-shadow: 2px 2px 2px black;
+                & i{
+                    animation: infinite 5s idea1;
+                }
+                @keyframes idea1{
+                    0%{
+                        transform: scale(1);
+                    }
+                    50%{
+                        transform: scale(1.3);
+                        color: $colorSecundario;
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+            }
+            & h2{
+                color: whitesmoke;
+                font-family: $fuenteSecundaria;
+                text-shadow: 2px 2px 2px black;
+                font-style: oblique;
+                font-weight: bolder;
+                transition: 500ms;
+                margin-bottom: 5%;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            & .btn{
+                background-color: black;
+                color: whitesmoke;
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    color: $colorPrincipal;
+                }
+            }    
+        }
+    }
+
+    & .division{
+        width: auto;
+        height: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @mixin fuente($family, $size, $weight, $style, $colorfont){
+        font-family: $family;
+        font-size: $size;
+        font-weight: $weight;
+        font-style: $style;
+        color: $colorfont;
+    }
+    & #portfolio{
+        height: auto;
+        & .p-left{
+            width: auto;
+            height: auto;
+            & .titulo--h2{
+                @include fuente($fuentePrincipal, 4vmax, bolder, oblique, $colorH2);
+                transition: 500ms;
+                padding: 15vh 0vw 2vh 0vw;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            & p{
+                @include fuente($fuenteSecundaria, 2vmax, bold, none, $colorTerceario);
+                & span{
+                    @include fuente($fuenteSecundaria, none, bold, none, whitesmoke);
+                    animation: span1 infinite 5s;
+                }
+                @keyframes span1{
+                    0%{
+                        opacity: 1;
+                        color: $colorPrincipal;
+                    }
+                    50%{
+                        opacity: 1;
+                        color: $colorSecundario;
+                    }
+                    100%{
+                        opacity: 1;
+                        color: $colorPrincipal;
+                    }
+                }
+            }
+            & .btn{
+                background-color: black;
+                color: whitesmoke;
+                border: solid 1px whitesmoke;
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    background-color: $colorPrincipal;
+                    border: solid 1px whitesmoke;
+                    color: whitesmoke;
+                }
+            }
+        }
+        & .p-right{
+            width: auto;
+            height: auto;
+            & #carousel1{
+                padding: 15vh 0vw 5vh 0vw;
+            }
+            & .carousel-item:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    & #servicios{
+        height: auto;
+        & .s-left{
+            @extend .p-left;
+            & .titulo2--h2{
+                @include fuente($fuentePrincipal, 4vmax, bold, oblique, $colorH2);
+                transition: 500ms;
+                padding: 15vh 0vw 2vh 0vw;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            & .btn{
+                background-color: black;
+                color: whitesmoke;
+                border: solid 1px whitesmoke;
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    background-color: $colorPrincipal;
+                    border: solid 1px whitesmoke;
+                }
+            }
+        }
+        & .s-right{
+            width: auto;
+            height: auto;
+            & #carousel2{
+                padding: 15vh 0vw 5vh 0vw;
+                & h5{
+                    text-shadow: 0 0 2px black;
+                    font-family: $fuentePrincipal;
+                    font-size: 2vmax;
+                }
+            }
+        }
+    }
+
+$medidash3: (
+    "medida1": 1.5vmax,
+    "medida2": 2.1vmax,
+    "medida3": 1.7vmax,
+    "medida4": 2.3vmax,
+    "medida5": 1.9vmax,
+);
+@each $medida, $size in $medidash3{
+    .titulo--#{$medida} {
+        color: $colorTerceario;
+        font-family: $fuenteSecundaria;
+        font-size: $size;
+        margin: 0vh 1vw 5vh 1vw;
+    }
+}
+
+    & #empresa{
+        width: auto;
+        height: auto;
+        & .e-left{
+            @extend .p-left;
+            & .titulo3--h2{
+                @include fuente($fuentePrincipal, 4vmax, bold, oblique, $colorH2);
+                transition: 500ms;
+                padding: 15vh 0vw 2vh 0vw;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                & span{
+                    color: $colorSecundario;
+                    text-decoration: none;
+                    font-size: 4vmax;
+                    transition: 500ms;
+                }
+            }
+            & p{
+                @include fuente($fuenteSecundaria, 2vmax, none, none, $colorTerceario);
+                margin: 0vh 5vw 8vh 5vw;
+                & span{
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+            & .btn{
+                background-color: black;
+                color: whitesmoke;
+                border: solid 1px whitesmoke;
+                transition: 800ms;
+                &:hover{
+                    transform: scale(0.9);
+                    background-color: $colorPrincipal;
+                    border: solid 1px whitesmoke;
+                }
+            }
+        }
+        & .e-right{
+            & #carousel3{
+                padding: 15vh 0vw 5vh 0vw;
+                & .carousel-item:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+/* FIN MAIN */

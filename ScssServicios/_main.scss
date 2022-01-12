@@ -1,0 +1,68 @@
+/* INICIO MAIN */
+.main{
+    width: auto;
+    height: auto;
+
+    & .jumbotron{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), whitesmoke), url("../Images/servicesfondo.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        margin-top: 10vh;
+        border-radius: 0;
+        color: whitesmoke;
+        height: 100vh;
+        & h1{
+            font-family: $fuentePrincipal;
+            margin-bottom: 5%;
+            text-shadow: 2px 2px 2px black;
+            font-size: 4vmax;
+        }
+        & h2{
+            font-family: $fuentePrincipal;
+            margin-bottom: 5%;
+            text-shadow: 2px 2px 2px black;
+        }
+        & p{
+            font-family: $fuenteTerciaria;
+            text-shadow: 2px 2px 2px black;
+            font-style: oblique; 
+            font-size: 2vmax;
+        }
+    }
+
+    & .left1{
+        & h2{
+            font-family: $fuenteTerciaria;
+            font-size: 4vmax;
+            font-weight: bold;
+            font-style: oblique;
+            transition: 500ms;
+            color: $colorSecundario;
+            padding: 2vh 0vw 2vh 0vw;
+            & span{
+                color:$colorTerceario;
+                transition: 700ms;
+                &:hover{
+                    color:$colorSecundario;
+                }
+            }
+        }
+
+        & .carousel{
+            & .carousel-inner{
+                & .carousel-item{
+                    & .carousel-caption{
+                        & h5{
+                            font-family: $fuenteTerciaria;
+                            text-shadow: 0 0 3px black;
+                            font-size: 2vmax;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* fin MAIN */

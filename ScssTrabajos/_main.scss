@@ -1,0 +1,93 @@
+/* INICIO MAIN */
+.main{
+    width: auto;
+    height: auto;
+
+    & .jumbotron{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0),  whitesmoke), url("../Images/3dprinting3.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        border-radius: 0;
+        color: whitesmoke;
+        height: 100vh;
+        & h1{
+            font-family: $fuentePrincipal;
+            margin-bottom: 5%;
+            text-shadow: 2px 2px 2px black;
+            font-size: 4vmax;
+            margin-top: 15vh;
+        }
+        & h2{
+            font-family: $fuentePrincipal;
+            margin-bottom: 5%;
+            text-shadow: 2px 2px 2px black;
+            color: whitesmoke;
+        }
+        & p{
+            font-family: $fuenteTerciaria;
+            text-shadow: 2px 2px 2px black;
+            font-style: oblique; 
+            font-size: 2vmax;
+            & a{
+                transition: 500ms;
+                text-decoration: none;
+                color: gold;
+                &:hover{
+                    transform: scale(1.5);
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    & .imagebox {
+        background: black;
+        padding: 0px;
+        margin-top: 1vmax;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            transition: 0.5s opacity;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+        & .imagebox-desc {
+            background-color: rgba(0, 0, 0, 0.6);
+            bottom: 0px;
+            color: white;
+            font-size: 1.2em;
+            left: 0px;
+            padding: 10px 15px;
+            position: absolute;
+            transition: 0.5s padding;
+            text-align: center;
+            width: 100%;
+            &:hover{
+                padding-bottom: 10%;
+                color: $colorPrincipal;
+            }
+        }
+    }
+
+    & .more{
+        width: 100%;
+        margin: 1rem;
+        & i{
+            color: $colorTerceario;
+            font-size: 3vmax;
+            transition: 800ms;
+            &:hover{
+                transform: rotate(360deg);
+                text-shadow: 0 0 5px black;
+            }
+        }
+    }
+}
+
+/* fin main */

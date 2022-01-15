@@ -47,24 +47,28 @@
     }
 }
 /* fin navbar */
-/* inicio navredes */
-.redes{
-    margin-right: 0.5rem;
-    & .nav-item{
-        background-color: $colorPrincipal;
-        transition: 500ms;
-        &:hover{
-            transform: translateY(0.3rem);
-        }
-        & .nav-link{
-            color: whitesmoke;
-            transition: 800ms;
-            &:hover{
-                transform: rotate(360deg);
-            }
-        }
+
+.whatsapp{
+    position: fixed;
+    width: 3.438rem;
+    height: 3.438rem;
+    line-height: 55px;
+    bottom: 3.125rem;
+    left: 1.875rem;
+    background-color: #00bb2d;
+    color: whitesmoke;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.875rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 51;
+    transition: 800ms;
+    &:hover{
+        text-decoration: none;
+        background-color: whitesmoke;
+        color: #00bb2d;
     }
 }
-/* fin navredes */
+
 /* FIN HEADER */
 

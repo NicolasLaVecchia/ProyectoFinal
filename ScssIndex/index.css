@@ -25,88 +25,84 @@ body {
 }
 
 /* INICIO HEADER */
-/* inicio navbar */
-.navbar {
+.header .navbar {
   background-color: #ffb2a4 !important;
   -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
           box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.navbar .navbar-brand img {
+.header .navbar .navbar-brand img {
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
-.navbar .navbar-brand img:hover {
+.header .navbar .navbar-brand img:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
 
-.navbar .navbar-toggler {
+.header .navbar .navbar-toggler {
   background-color: whitesmoke;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item {
+.header .navbar .navbar-collapse .navbar-nav .nav-item {
   margin-right: 2rem;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: black !important;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #f5f5f5 !important;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
   -webkit-transition: 800ms;
   transition: 800ms;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link i:hover {
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link i:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.navbar .navbar-collapse .form-inline .btn {
+.header .navbar .navbar-collapse .form-inline .btn {
   -webkit-transition: 800ms;
   transition: 800ms;
 }
 
-.navbar .navbar-collapse .form-inline .btn:hover {
+.header .navbar .navbar-collapse .form-inline .btn:hover {
   background-color: whitesmoke;
   color: black;
   border: solid 1px whitesmoke;
 }
 
-/* fin navbar */
-/* inicio navredes */
-.redes {
-  margin-right: 0.5rem;
-}
-
-.redes .nav-item {
-  background-color: #ffb2a4;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.redes .nav-item:hover {
-  -webkit-transform: translateY(0.3rem);
-          transform: translateY(0.3rem);
-}
-
-.redes .nav-item .nav-link {
+.header .whatsapp {
+  position: fixed;
+  width: 3.438rem;
+  height: 3.438rem;
+  line-height: 55px;
+  bottom: 3.125rem;
+  left: 1.875rem;
+  background-color: #00bb2d;
   color: whitesmoke;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.875rem;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 51;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
 
-.redes .nav-item .nav-link:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+.header .whatsapp:hover {
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #00bb2d;
 }
 
 /* fin navredes */
@@ -129,6 +125,7 @@ body {
   overflow: hidden;
   position: relative;
   margin-top: 0 !important;
+  z-index: 50;
 }
 
 .main .jumbotronHome #videoArea {
@@ -140,13 +137,17 @@ body {
   z-index: 1;
 }
 
-.main .jumbotronHome #videoArea .jumbotron {
+.main .jumbotronHome #videoArea .jumbotron-1 {
   display: block;
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main .jumbotronHome #videoArea .jumbotron-1 .video {
+  width: 100%;
 }
 
 .main .jumbotronHome .text {
@@ -158,9 +159,10 @@ body {
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  margin-bottom: 5%;
-  margin-top: 35%;
+  margin-bottom: 10%;
+  margin-top: 15%;
   text-shadow: 2px 2px 2px black;
+  font-size: 3em;
 }
 
 .main .jumbotronHome .text h1 i {
@@ -200,7 +202,7 @@ body {
   }
 }
 
-.main .jumbotronHome .text h2 {
+.main .jumbotronHome .text h4 {
   color: whitesmoke;
   font-family: "Cormorant Garamond", serif;
   text-shadow: 2px 2px 2px black;
@@ -208,10 +210,10 @@ body {
   font-weight: bolder;
   -webkit-transition: 500ms;
   transition: 500ms;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
-.main .jumbotronHome .text h2:hover {
+.main .jumbotronHome .text h4:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -227,6 +229,8 @@ body {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   color: #ffb2a4;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .main .division {
@@ -239,40 +243,86 @@ body {
   height: 100%;
 }
 
+.main .btn-flecha {
+  position: fixed;
+  opacity: 0.5;
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 30px;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  background-color: #818181;
+  color: whitesmoke;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.938rem;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 40;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.main .btn-flecha:hover {
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #818181;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .main #portfolio {
+  width: 100%;
   height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main #portfolio .p-left, .main #portfolio #servicios .s-left, .main #servicios #portfolio .s-left, .main #portfolio #empresa .e-left, .main #empresa #portfolio .e-left {
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
 .main #portfolio .p-left .titulo--h2, .main #portfolio #servicios .s-left .titulo--h2, .main #servicios #portfolio .s-left .titulo--h2, .main #portfolio #empresa .e-left .titulo--h2, .main #empresa #portfolio .e-left .titulo--h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 4vmax;
+  font-size: 4rem;
   font-weight: bolder;
   font-style: oblique;
-  color: black;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  padding: 15vh 0vw 2vh 0vw;
+  color: #ffb2a4;
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
-.main #portfolio .p-left .titulo--h2:hover, .main #portfolio #servicios .s-left .titulo--h2:hover, .main #servicios #portfolio .s-left .titulo--h2:hover, .main #portfolio #empresa .e-left .titulo--h2:hover, .main #empresa #portfolio .e-left .titulo--h2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.main #portfolio .p-left .titulo--h2::before, .main #portfolio #servicios .s-left .titulo--h2::before, .main #servicios #portfolio .s-left .titulo--h2::before, .main #portfolio #empresa .e-left .titulo--h2::before, .main #empresa #portfolio .e-left .titulo--h2::before {
+  content: "";
+  position: absolute;
+  background-color: #ffb2a4;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  right: 0;
+  bottom: -2px;
 }
 
-.main #portfolio .p-left p, .main #portfolio #servicios .s-left p, .main #servicios #portfolio .s-left p, .main #portfolio #empresa .e-left p, .main #empresa #portfolio .e-left p {
+.main #portfolio .p-left .titulo--h2:hover::before, .main #portfolio #servicios .s-left .titulo--h2:hover::before, .main #servicios #portfolio .s-left .titulo--h2:hover::before, .main #portfolio #empresa .e-left .titulo--h2:hover::before, .main #empresa #portfolio .e-left .titulo--h2:hover::before {
+  width: 100%;
+}
+
+.main #portfolio .p-left h4, .main #portfolio #servicios .s-left h4, .main #servicios #portfolio .s-left h4, .main #portfolio #empresa .e-left h4, .main #empresa #portfolio .e-left h4 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2vmax;
+  font-size: none;
   font-weight: bold;
   font-style: none;
   color: #818181;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-.main #portfolio .p-left p span, .main #portfolio #servicios .s-left p span, .main #servicios #portfolio .s-left p span, .main #portfolio #empresa .e-left p span, .main #empresa #portfolio .e-left p span {
+.main #portfolio .p-left h4 span, .main #portfolio #servicios .s-left h4 span, .main #servicios #portfolio .s-left h4 span, .main #portfolio #empresa .e-left h4 span, .main #empresa #portfolio .e-left h4 span {
   font-family: "Cormorant Garamond", serif;
   font-size: none;
   font-weight: bold;
@@ -313,9 +363,9 @@ body {
 }
 
 .main #portfolio .p-left .btn, .main #portfolio #servicios .s-left .btn, .main #servicios #portfolio .s-left .btn, .main #portfolio #empresa .e-left .btn, .main #empresa #portfolio .e-left .btn {
-  background-color: black;
+  background-color: #a18da0;
   color: whitesmoke;
-  border: solid 1px whitesmoke;
+  margin-bottom: 1rem;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -324,48 +374,70 @@ body {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   background-color: #ffb2a4;
-  border: solid 1px whitesmoke;
   color: whitesmoke;
 }
 
 .main #portfolio .p-right {
   width: auto;
   height: auto;
+  overflow: hidden;
 }
 
 .main #portfolio .p-right #carousel1 {
-  padding: 15vh 0vw 5vh 0vw;
+  width: auto;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
-.main #portfolio .p-right .carousel-item:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+.main #portfolio .p-right .carousel-inner {
+  border-radius: 10%;
+}
+
+.main #portfolio .p-right .carousel-inner .carousel-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main #servicios {
+  width: 100%;
   height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main #servicios .s-left .titulo2--h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 4vmax;
+  font-size: 3.3rem;
   font-weight: bold;
   font-style: oblique;
-  color: black;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  padding: 15vh 0vw 2vh 0vw;
+  color: #ffb2a4;
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
-.main #servicios .s-left .titulo2--h2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.main #servicios .s-left .titulo2--h2::before {
+  content: "";
+  position: absolute;
+  background-color: #ffb2a4;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  right: 0;
+  bottom: -2px;
+}
+
+.main #servicios .s-left .titulo2--h2:hover::before {
+  width: 100%;
 }
 
 .main #servicios .s-left .btn {
-  background-color: black;
+  background-color: #a18da0;
   color: whitesmoke;
-  border: solid 1px whitesmoke;
+  margin-bottom: 1rem;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -374,16 +446,19 @@ body {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   background-color: #ffb2a4;
-  border: solid 1px whitesmoke;
+  color: whitesmoke;
 }
 
 .main #servicios .s-right {
   width: auto;
-  height: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .main #servicios .s-right #carousel2 {
-  padding: 15vh 0vw 5vh 0vw;
+  width: auto;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 .main #servicios .s-right #carousel2 h5 {
@@ -392,88 +467,114 @@ body {
   font-size: 2vmax;
 }
 
+.main #servicios .s-right #carousel2 .carousel-inner {
+  border-radius: 10%;
+}
+
+.main #servicios .s-right #carousel2 .carousel-inner .carousel-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main #servicios .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.main #servicios .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 .main .titulo--medida1 {
   color: #818181;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.5vmax;
+  font-size: 1.9rem;
   margin: 0vh 1vw 5vh 1vw;
 }
 
 .main .titulo--medida2 {
   color: #818181;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.1vmax;
+  font-size: 2.2rem;
   margin: 0vh 1vw 5vh 1vw;
 }
 
 .main .titulo--medida3 {
   color: #818181;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.7vmax;
+  font-size: 1.7rem;
   margin: 0vh 1vw 5vh 1vw;
 }
 
 .main .titulo--medida4 {
   color: #818181;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.3vmax;
+  font-size: 1.9rem;
   margin: 0vh 1vw 5vh 1vw;
 }
 
 .main .titulo--medida5 {
   color: #818181;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.9vmax;
+  font-size: 2.1rem;
   margin: 0vh 1vw 5vh 1vw;
 }
 
 .main #empresa {
-  width: auto;
+  width: 100%;
   height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main #empresa .e-left .titulo3--h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 4vmax;
+  font-size: 4rem;
   font-weight: bold;
   font-style: oblique;
-  color: black;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  padding: 15vh 0vw 2vh 0vw;
+  color: #ffb2a4;
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
-.main #empresa .e-left .titulo3--h2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.main #empresa .e-left .titulo3--h2::before {
+  content: "";
+  position: absolute;
+  background-color: #ffb2a4;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  right: 0;
+  bottom: -2px;
+}
+
+.main #empresa .e-left .titulo3--h2:hover::before {
+  width: 100%;
 }
 
 .main #empresa .e-left .titulo3--h2 span {
   color: goldenrod;
   text-decoration: none;
-  font-size: 4vmax;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  font-size: 4rem;
 }
 
-.main #empresa .e-left p {
+.main #empresa .e-left h4 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2vmax;
+  font-size: none;
   font-weight: none;
   font-style: none;
   color: #818181;
-  margin: 0vh 5vw 8vh 5vw;
-}
-
-.main #empresa .e-left p span {
-  color: black;
-  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .main #empresa .e-left .btn {
-  background-color: black;
+  background-color: #a18da0;
   color: whitesmoke;
-  border: solid 1px whitesmoke;
+  margin-bottom: 1rem;
   -webkit-transition: 800ms;
   transition: 800ms;
 }
@@ -482,47 +583,143 @@ body {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   background-color: #ffb2a4;
-  border: solid 1px whitesmoke;
+  color: whitesmoke;
+}
+
+.main #empresa .e-right {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .main #empresa .e-right #carousel3 {
-  padding: 15vh 0vw 5vh 0vw;
+  width: auto;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
-.main #empresa .e-right #carousel3 .carousel-item:hover {
+.main #empresa .e-right #carousel3 .carousel-inner {
+  border-radius: 10%;
+}
+
+.main #empresa .e-right #carousel3 .carousel-inner .carousel-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.main #empresa .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.main #empresa .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 /* FIN MAIN */
 /* INICIO FOOTER */
 .footer {
-  width: auto;
-  height: auto;
-  background-color: #818181;
-}
-
-.footer p {
-  font-family: "PT Sans", sans-serif;
-  font-size: 1vmax;
-  font-style: italic;
-  color: whitesmoke;
-}
-
-.footer a {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.footer .color-fondo {
+  background-color: #a18da0;
+}
+
+.footer .color-fondo .arriba h6 {
   color: whitesmoke;
 }
 
-.footer a img {
-  -webkit-transition: 700ms;
-  transition: 700ms;
+.footer .color-fondo .arriba i {
+  color: whitesmoke;
+  -webkit-transition: 800ms;
+  transition: 800ms;
 }
 
-.footer a img:hover {
-  -webkit-transform: translateX(-1rem);
-          transform: translateX(-1rem);
+.footer .color-fondo .arriba i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.footer .medio .imagen-logo {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.footer .medio .imagen-logo:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.footer .medio h6 {
+  color: goldenrod;
+  padding-top: 2rem;
+}
+
+.footer .medio .p-footer {
+  color: #818181;
+}
+
+.footer .medio .link-footer {
+  width: auto;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #818181;
+}
+
+.footer .medio .link-footer::before {
+  content: "";
+  position: absolute;
+  background-color: goldenrod;
+  width: 0%;
+  height: 2px;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  left: 0;
+  bottom: -2px;
+}
+
+.footer .medio .link-footer:hover::before {
+  width: 100%;
+}
+
+.footer .medio p {
+  color: #818181;
+}
+
+.footer .abajo {
+  color: whitesmoke;
+  background-color: #777484;
+}
+
+.footer .abajo img {
+  -webkit-animation: logocopy infinite 4s;
+          animation: logocopy infinite 4s;
+}
+
+@-webkit-keyframes logocopy {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logocopy {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* FIN FOOTER */

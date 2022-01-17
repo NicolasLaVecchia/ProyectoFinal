@@ -279,21 +279,20 @@ body {
 }
 
 .main #portfolio .p-left, .main #portfolio #servicios .s-left, .main #servicios #portfolio .s-left, .main #portfolio #empresa .e-left, .main #empresa #portfolio .e-left {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 
 .main #portfolio .p-left .titulo--h2, .main #portfolio #servicios .s-left .titulo--h2, .main #servicios #portfolio .s-left .titulo--h2, .main #portfolio #empresa .e-left .titulo--h2, .main #empresa #portfolio .e-left .titulo--h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 3em;
   font-weight: bolder;
   font-style: oblique;
-  color: #ffb2a4;
-  width: auto;
+  color: whitesmoke;
+  width: 100%;
   height: 100%;
   position: relative;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  background-color: #777484;
 }
 
 .main #portfolio .p-left .titulo--h2::before, .main #portfolio #servicios .s-left .titulo--h2::before, .main #servicios #portfolio .s-left .titulo--h2::before, .main #portfolio #empresa .e-left .titulo--h2::before, .main #empresa #portfolio .e-left .titulo--h2::before {
@@ -407,15 +406,14 @@ body {
 
 .main #servicios .s-left .titulo2--h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 3.3rem;
+  font-size: 2.7em;
   font-weight: bold;
   font-style: oblique;
-  color: #ffb2a4;
-  width: auto;
+  color: whitesmoke;
+  width: 100%;
   height: 100%;
   position: relative;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  background-color: #777484;
 }
 
 .main #servicios .s-left .titulo2--h2::before {
@@ -528,15 +526,14 @@ body {
 
 .main #empresa .e-left .titulo3--h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 2em;
   font-weight: bold;
   font-style: oblique;
-  color: #ffb2a4;
+  color: whitesmoke;
   width: auto;
   height: 100%;
   position: relative;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  background-color: #777484;
 }
 
 .main #empresa .e-left .titulo3--h2::before {
@@ -558,7 +555,7 @@ body {
 .main #empresa .e-left .titulo3--h2 span {
   color: goldenrod;
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .main #empresa .e-left h4 {

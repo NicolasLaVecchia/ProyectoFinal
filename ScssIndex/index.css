@@ -432,6 +432,10 @@ body {
   width: 100%;
 }
 
+.main #servicios .s-left .titulo--medida1 {
+  padding-top: 1rem;
+}
+
 .main #servicios .s-left .btn {
   background-color: #a18da0;
   color: whitesmoke;

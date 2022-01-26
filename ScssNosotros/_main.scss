@@ -115,6 +115,62 @@
         }
     }
 
+    & .skills{
+        padding: 60px 0;
+        overflow: hidden;
+        & .section-title{
+            text-align: center;
+            padding-bottom: 30px;
+            & h2{
+                font-family: $fuenteTerciaria;
+                font-size: 3rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                background: #777484;
+                color: whitesmoke;
+            }
+            & h5{
+                margin-bottom: 0;
+                font-family: $fuenteSecundaria;
+                color: $colorTerceario;
+            }
+        }
+        & .skills-content{
+            display: flex;
+            flex-wrap: wrap;
+            & .porcentaje{
+                & .progress{
+                    height: 60px;
+                    display: block;
+                    background: none;
+                    border-radius: 0;
+                    & .skill{
+                        padding: 15px 0;
+                        margin: 0;
+                        text-transform: uppercase;
+                        display: block;
+                        font-weight: 600;
+                        font-family: $fuenteTerciaria;
+                        color: $colorTerceario;
+                        & .val{
+                            float: right;
+                            font-style: normal;
+                        }
+                    }
+                    & .progress-bar-wrap{
+                        background: #ffe3df;
+                        box-shadow: 2px 2px 5px #777484;
+                        & .progress-bar{
+                            height: 10px;
+                            background-color: $colorPrincipal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     & .division{
         width: auto;
         height: 100%;
